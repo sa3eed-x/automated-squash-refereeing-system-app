@@ -25,7 +25,7 @@ if (flutterVersionName == null) {
 
 
 android {
-    namespace "com.example.gradfinal"
+    namespace "com.example.flutter_application_4"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
@@ -50,7 +50,7 @@ android {
         multiDexEnabled true
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion 24
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -59,7 +59,7 @@ android {
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
+            // Signing with the debug keys for now, so flutter run --release works.
             signingConfig signingConfigs.debug
         }
     }
@@ -71,4 +71,5 @@ flutter {
 
 dependencies {
     implementation platform('com.google.firebase:firebase-bom:32.8.0')
+    
 }
